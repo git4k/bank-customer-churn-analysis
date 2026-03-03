@@ -16,16 +16,30 @@ A comprehensive data analytics project demonstrating end-to-end skills in data c
 
 **Business Impact:** Identified $185.6M in at-risk customer value. Analysis reveals Germany has 32.44% churn rate, customers aged 46-60 show 51.12% churn, and product complexity (3-4 products) drives 82-100% churn rates.
 
-**Skills Demonstrated:** Python (Pandas, NumPy, Scikit-learn, XGBoost), SQL, Data Visualization (Matplotlib, Seaborn), Statistical Analysis, Machine Learning, Business Intelligence, Power BI
+**Skills Demonstrated:** 
+- **Data Analysis:** Python (Pandas, NumPy), Statistical Analysis, Data Cleaning & Transformation
+- **Machine Learning:** XGBoost, Scikit-learn, Model Evaluation, Feature Engineering
+- **SQL:** Complex Queries, Data Extraction, Database Management (SQLite)
+- **Visualization:** Power BI, Matplotlib, Seaborn, DAX Functions
+- **Business Intelligence:** Dashboard Design, KPI Development, Report Publishing
+- **Tools:** Jupyter Notebook, Power Query Editor, Git/GitHub
 
 ---
 
 ## 📊 Dashboard Preview
 
-### Power BI Dashboard
-*Upload your Power BI dashboard screenshot here after creation*
+### Power BI Dashboard - Advanced Features
+*Professional dashboard showcasing advanced DAX, drill-through, and interactive features*
 
 ![Dashboard Preview](dashboard/dashboard_screenshot.png)
+
+**Dashboard Capabilities:**
+- Interactive KPI cards with DAX measures
+- Drill-through filters for detailed analysis
+- Bookmarks for different views
+- Sync slicers across pages
+- Row Level Security (RLS) implementation
+- Scheduled refresh in Power BI Service
 
 ### Analysis Visualizations
 
@@ -295,9 +309,16 @@ jupyter notebook notebooks/04_xgboost_model.ipynb
 sqlite3 bank_churn.db < sql/churn_queries.sql
 ```
 
-**Step 3: Power BI Dashboard (Optional)**
+**Step 3: Power BI Dashboard Development**
 - Open Power BI Desktop
-- Load `data/processed/bank_churn_clean.csv`
+- Import data using Power Query Editor
+- Transform data using M Language
+- Create data model with relationships
+- Develop advanced DAX measures (Time Intelligence, Statistical, Logical functions)
+- Design interactive visuals with bookmarks and drill-through
+- Implement Row Level Security (RLS)
+- Publish to Power BI Service
+- Configure scheduled refresh and subscriptions
 - Follow instructions in `dashboard/README.md`
 - Save screenshot to `dashboard/dashboard_screenshot.png`
 
@@ -335,16 +356,37 @@ sqlite3 bank_churn.db < sql/churn_queries.sql
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technical Skills Demonstrated
 
-- **Python 3.8+**: Core programming language
-- **Pandas & NumPy**: Data manipulation
-- **Matplotlib & Seaborn**: Visualization
-- **XGBoost**: Machine learning model
-- **Scikit-learn**: Model evaluation & preprocessing
-- **SQLite**: Database management
-- **Jupyter Notebook**: Interactive development
-- **Power BI**: Dashboard creation (optional)
+### Data Analysis & Manipulation
+- **Python Libraries**: Pandas, NumPy for data cleaning and transformation
+- **Data Processing**: Handled 10,000+ records, performed data validation and quality checks
+- **Feature Engineering**: Created calculated columns and ratio-based metrics
+- **Statistical Analysis**: Correlation analysis, distribution analysis, hypothesis testing
+
+### SQL & Database Management
+- **SQL Queries**: Wrote 12+ complex analytical queries with aggregations, GROUP BY, and CASE statements
+- **Database Design**: Created and managed SQLite database with proper indexing
+- **Data Extraction**: Extracted insights from large datasets using SQL joins and subqueries
+- **Performance Optimization**: Optimized queries for faster report generation
+
+### Business Intelligence & Visualization
+- **Power BI**: Dashboard design with DAX measures (Churn Rate, Retention Rate, Avg Balance)
+- **Data Visualization**: Created 8+ professional charts using Matplotlib and Seaborn
+- **KPI Development**: Defined and tracked key business metrics
+- **Report Design**: Structured reports for stakeholder presentation
+
+### Machine Learning & Predictive Analytics
+- **Model Development**: Built XGBoost classifier with 86.75% accuracy
+- **Hyperparameter Tuning**: Used GridSearchCV for model optimization
+- **Model Evaluation**: Confusion matrix, ROC curve, feature importance analysis
+- **Predictive Modeling**: Generated probability scores for churn prediction
+
+### Tools & Technologies
+- **Development**: Jupyter Notebook, Python 3.8+, Git/GitHub
+- **Data Tools**: Power Query Editor, SQL, Excel
+- **Visualization**: Power BI, Matplotlib, Seaborn
+- **Version Control**: Git for project management and collaboration
 
 ---
 
@@ -397,8 +439,22 @@ sqlite3 bank_churn.db < sql/churn_queries.sql
 
 ## 👤 Author
 
-**Data Analyst Portfolio Project**  
-Showcasing skills in: Data Analysis | Machine Learning | SQL | Python | Power BI | Business Intelligence
+**Data Analyst | Business Intelligence Developer**
+
+**Core Competencies:**
+- Advanced SQL & Database Management
+- Power BI Development (DAX, Power Query, M Language)
+- Python for Data Analysis (Pandas, NumPy, Scikit-learn)
+- Machine Learning & Predictive Analytics
+- Data Visualization & Dashboard Design
+- Statistical Analysis & Business Intelligence
+
+**Technical Skills:**
+- Power BI Desktop & Service (RLS, Bookmarks, Drill-Through, Scheduled Refresh)
+- SQL (Complex Queries, Joins, Aggregations, Performance Optimization)
+- Python (Data Cleaning, Feature Engineering, ML Model Development)
+- Data Modeling (Relationships, Bridge Tables, Star Schema)
+- Power Query Editor & M Language for ETL processes
 
 GitHub: [@git4k](https://github.com/git4k)  
 Project: [bank-customer-churn-analysis](https://github.com/git4k/bank-customer-churn-analysis)
