@@ -9,8 +9,8 @@ Your project has been committed locally. Now follow these steps to push to GitHu
 ## Step 1: Create GitHub Repository
 
 1. Go to https://github.com/new
-2. Repository name: `bank-churn-dashboard`
-3. Description: `Bank Customer Churn Analysis - ML Model with 86.75% Accuracy`
+2. Repository name: `bank-customer-churn-analysis`
+3. Description: `Professional Data Analytics Project - Customer Churn Prediction with ML, SQL, and Power BI`
 4. Choose: **Public** (or Private if you prefer)
 5. **DO NOT** initialize with README, .gitignore, or license
 6. Click **Create repository**
@@ -23,7 +23,7 @@ Copy and paste these commands in your terminal:
 
 ```bash
 # Add your GitHub repository as remote
-git remote add origin https://github.com/YOUR_USERNAME/bank-churn-dashboard.git
+git remote add origin https://github.com/YOUR_USERNAME/bank-customer-churn-analysis.git
 
 # Push to GitHub
 git branch -M main

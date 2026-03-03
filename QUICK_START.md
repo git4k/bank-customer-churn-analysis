@@ -27,13 +27,14 @@ Your project is **100% complete** and ready to push to GitHub!
 
 ### 1. Create GitHub Repository
 - Go to: https://github.com/new
-- Name: `bank-churn-dashboard`
+- Name: `bank-customer-churn-analysis`
+- Description: `Professional Data Analytics Project - Customer Churn Prediction`
 - **Don't** initialize with README
 - Click **Create repository**
 
 ### 2. Push Your Code
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/bank-churn-dashboard.git
+git remote add origin https://github.com/YOUR_USERNAME/bank-customer-churn-analysis.git
 git branch -M main
 git push -u origin main
 ```

@@ -1,19 +1,22 @@
-# 🏦 Bank Customer Churn Analysis - Complete Report
+# 🏦 Bank Customer Churn Analysis
 
-**Machine Learning Project | XGBoost Classifier | 86.75% Accuracy**
+**Professional Data Analytics Project | Machine Learning | Business Intelligence**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-ML-green.svg)](https://xgboost.readthedocs.io/)
 [![SQL](https://img.shields.io/badge/SQL-SQLite-lightgrey.svg)](https://www.sqlite.org/)
+[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow.svg)](https://powerbi.microsoft.com/)
 
 ---
 
 ## 📋 Executive Summary
 
-This end-to-end data science project analyzes 10,000 bank customers to identify churn patterns and predict which customers will leave. The XGBoost model achieves **86.75% accuracy** and reveals critical insights: Germany has 32.44% churn, customers aged 46-60 have 51.12% churn, and customers with 3-4 products have 82-100% churn rates.
+A comprehensive data analytics project demonstrating end-to-end skills in data cleaning, exploratory analysis, statistical modeling, SQL querying, and business intelligence visualization. This project analyzes 10,000 bank customers to identify churn patterns and build a predictive model with **86.75% accuracy**.
 
-**Key Result:** $185.6 million in customer value at risk. A 5% reduction in churn could save $46 million.
+**Business Impact:** Identified $185.6M in at-risk customer value. Analysis reveals Germany has 32.44% churn rate, customers aged 46-60 show 51.12% churn, and product complexity (3-4 products) drives 82-100% churn rates.
+
+**Skills Demonstrated:** Python (Pandas, NumPy, Scikit-learn, XGBoost), SQL, Data Visualization (Matplotlib, Seaborn), Statistical Analysis, Machine Learning, Business Intelligence, Power BI
 
 ---
 
@@ -228,7 +231,7 @@ This end-to-end data science project analyzes 10,000 bank customers to identify 
 ## 📁 Project Structure
 
 ```
-bank-churn-dashboard/
+bank-customer-churn-analysis/
 ├── data/
 │   ├── raw/                          # Raw data from Kaggle
 │   └── processed/                    # Cleaned datasets
@@ -394,8 +397,11 @@ sqlite3 bank_churn.db < sql/churn_queries.sql
 
 ## 👤 Author
 
-**Data Science Team**  
-GitHub: [@git4k](https://github.com/git4k)
+**Data Analyst Portfolio Project**  
+Showcasing skills in: Data Analysis | Machine Learning | SQL | Python | Power BI | Business Intelligence
+
+GitHub: [@git4k](https://github.com/git4k)  
+Project: [bank-customer-churn-analysis](https://github.com/git4k/bank-customer-churn-analysis)
 
 ---
 
