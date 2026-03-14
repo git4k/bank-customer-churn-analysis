@@ -39,9 +39,7 @@ data/processed/*
 *.pbix
 
 # Outputs
-outputs/*.png
-outputs/*.csv
-!outputs/.gitkeep
+outputs/.gitkeep
 
 # IDE
 .vscode/

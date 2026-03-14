@@ -70,26 +70,6 @@ A comprehensive data analytics project demonstrating end-to-end skills in data c
   </tr>
 </table>
 
-### Analysis Visualizations
-
-<table>
-  <tr>
-    <td><img src="outputs/churn_distribution.png" width="400"/><br/><b>Churn Distribution</b></td>
-    <td><img src="outputs/churn_by_geography.png" width="400"/><br/><b>Churn by Geography</b></td>
-  </tr>
-  <tr>
-    <td><img src="outputs/age_vs_churn.png" width="400"/><br/><b>Age vs Churn</b></td>
-    <td><img src="outputs/correlation_heatmap.png" width="400"/><br/><b>Correlation Heatmap</b></td>
-  </tr>
-  <tr>
-    <td><img src="outputs/confusion_matrix.png" width="400"/><br/><b>Confusion Matrix</b></td>
-    <td><img src="outputs/feature_importance.png" width="400"/><br/><b>Feature Importance</b></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><img src="outputs/roc_curve.png" width="400"/><br/><b>ROC Curve</b></td>
-  </tr>
-</table>
-
 ---
 
 ## 🎯 Key Findings
