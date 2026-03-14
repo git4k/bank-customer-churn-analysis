@@ -1,34 +1,12 @@
-# 🏦 Bank Customer Churn Analysis
+# Bank Customer Churn Analysis
 
-**Professional Data Analytics Project | Machine Learning | Business Intelligence**
+A data analytics project analyzing 10,000 bank customers to understand churn patterns and build a machine learning model to predict which customers are likely to leave.
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
-[![XGBoost](https://img.shields.io/badge/XGBoost-ML-green.svg)](https://xgboost.readthedocs.io/)
-[![SQL](https://img.shields.io/badge/SQL-SQLite-lightgrey.svg)](https://www.sqlite.org/)
-[![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow.svg)](https://powerbi.microsoft.com/)
+**Tech Stack:** Python, Pandas, SQL, XGBoost, Power BI, Matplotlib, Seaborn
 
 ---
 
-## 📋 Executive Summary
-
-A comprehensive data analytics project demonstrating end-to-end skills in data cleaning, exploratory analysis, statistical modeling, SQL querying, and business intelligence visualization. This project analyzes 10,000 bank customers to identify churn patterns and build a predictive model with **86.75% accuracy**.
-
-**Business Impact:** Identified $185.6M in at-risk customer value. Analysis reveals Germany has 32.44% churn rate, customers aged 46-60 show 51.12% churn, and product complexity (3-4 products) drives 82-100% churn rates.
-
-**Skills Demonstrated:** 
-- **Data Analysis:** Python (Pandas, NumPy), Statistical Analysis, Data Cleaning & Transformation
-- **Machine Learning:** XGBoost, Scikit-learn, Model Evaluation, Feature Engineering
-- **SQL:** Complex Queries, Data Extraction, Database Management (SQLite)
-- **Visualization:** Power BI, Matplotlib, Seaborn, DAX Functions
-- **Business Intelligence:** Dashboard Design, KPI Development, Report Publishing
-- **Tools:** Jupyter Notebook, Power Query Editor, Git/GitHub
-
----
-
-## 📊 Power BI Dashboard
-
-### Bank Customer Churn - Interactive Dashboard
+## Power BI Dashboard
 
 <table>
   <tr>
@@ -40,17 +18,9 @@ A comprehensive data analytics project demonstrating end-to-end skills in data c
   </tr>
 </table>
 
-**Dashboard Features:**
-- KPI cards: Churn Rate, Total Customers, Retention Rate
-- Churn by Geography (Bar Chart)
-- Age Group vs Churn Analysis
-- Active vs Inactive Members (Donut Chart)
-- Products vs Churn breakdown
-- Interactive slicers: Geography, Gender, IsActiveMember
-
 ---
 
-## 📈 Analysis Visualizations
+## Analysis Visualizations
 
 <table>
   <tr>
@@ -66,244 +36,82 @@ A comprehensive data analytics project demonstrating end-to-end skills in data c
     <td align="center"><img src="outputs/feature_importance.png" width="380"/><br/><b>Feature Importance</b><br/>Top predictors: Age, Products, Activity</td>
   </tr>
   <tr>
-    <td align="center" colspan="2"><img src="outputs/roc_curve.png" width="380"/><br/><b>ROC Curve</b><br/>AUC ~0.85 strong predictive power</td>
+    <td align="center" colspan="2"><img src="outputs/roc_curve.png" width="380"/><br/><b>ROC Curve</b><br/>AUC ~0.85</td>
   </tr>
 </table>
 
 ---
 
-## 🎯 Key Findings
+## Key Findings
 
-### 1. 🌍 Geography - Critical Risk Factor
-| Region | Churn Rate | Status |
-|--------|-----------|--------|
-| **Germany** | **32.44%** | 🚨 CRITICAL |
-| Spain | 16.67% | ⚠️ Moderate |
-| France | 16.15% | ⚠️ Moderate |
+**Geography**
+| Region | Churn Rate |
+|--------|-----------|
+| Germany | 32.44% |
+| Spain | 16.67% |
+| France | 16.15% |
 
-**Action:** Immediate investigation needed in German market.
+**Age Group**
+| Age Group | Churn Rate |
+|-----------|-----------|
+| 46-60 | 51.12% |
+| Above 60 | 24.78% |
+| 30-45 | 15.30% |
+| Under 30 | 7.56% |
 
-### 2. 👥 Age - Strongest Predictor
-| Age Group | Churn Rate | Status |
-|-----------|-----------|--------|
-| **46-60** | **51.12%** | 🚨 EXTREME RISK |
-| 60+ | 24.78% | ⚠️ High |
-| 30-45 | 15.30% | ✅ Normal |
-| Under 30 | 7.56% | ✅ Low |
+**Number of Products**
+| Products | Churn Rate |
+|----------|-----------|
+| 4 | 100.00% |
+| 3 | 82.71% |
+| 1 | 27.71% |
+| 2 | 7.58% |
 
-**Action:** Create specialized retention programs for 46-60 age group.
-
-### 3. 🛍️ Product Portfolio - Surprising Pattern
-| Products | Churn Rate | Status |
-|----------|-----------|--------|
-| **4 Products** | **100%** | 🚨 ALL CHURNED |
-| **3 Products** | **82.71%** | 🚨 CRITICAL |
-| 2 Products | 7.58% | ✅ OPTIMAL |
-| 1 Product | 27.71% | ⚠️ Moderate |
-
-**Action:** STOP cross-selling beyond 2 products. Investigate why complexity drives churn.
-
-### 4. 👤 Gender Gap
-- **Females:** 25.07% churn
-- **Males:** 16.46% churn
-
-**Action:** Investigate female customer experience and satisfaction.
-
-### 5. 📊 Activity Level
-- **Inactive Members:** 26.85% churn
-- **Active Members:** 14.27% churn
-
-**Action:** Launch reactivation campaigns for dormant customers.
+**Other Findings**
+- Inactive members churn at 26.85% vs 14.27% for active members
+- Female customers churn at 25.07% vs 16.46% for males
+- Churned customers have higher average balance ($91,108 vs $72,745)
 
 ---
 
-## 💰 Business Impact
+## ML Model Results
 
-### Current Situation
-- **Total Customers:** 10,000
-- **Churned:** 2,037 (20.37%)
-- **Average Churned Balance:** $91,108
-- **Total Value at Risk:** ~$185.6 million
+- **Algorithm:** XGBoost with GridSearchCV hyperparameter tuning
+- **Accuracy:** 86.75%
+- **ROC AUC:** ~0.85
+- **Train/Test Split:** 80/20
 
-### High-Value Losses
-- 10 customers with balances > $100,000 already churned
-- Highest churned balance: $250,898
-
-### ROI Projection
-**If retention efforts reduce churn by 5%:**
-- Save ~500 customers
-- Estimated value: **$46 million**
+Top features: Age, NumOfProducts, IsActiveMember, Geography, Balance
 
 ---
 
-## 🤖 Machine Learning Model
-
-### Model Performance
-- **Algorithm:** XGBoost with GridSearchCV
-- **Test Accuracy:** 86.75%
-- **ROC AUC Score:** ~0.85
-- **Training Set:** 8,000 customers
-- **Test Set:** 2,000 customers
-
-### Top 10 Predictive Features
-1. Age ⭐
-2. Number of Products ⭐
-3. IsActiveMember ⭐
-4. Geography (Germany)
-5. Balance
-6. Gender
-7. Credit Score
-8. Tenure
-9. Estimated Salary
-10. HasCrCard
-
-### Model Outputs
-- 2,000 predictions with probability scores
-- Confusion matrix showing prediction accuracy
-- Feature importance rankings
-- ROC curve analysis
-
----
-
-## 📈 Customer Profile Analysis
-
-| Metric | Churned | Retained | Difference |
-|--------|---------|----------|------------|
-| **Average Age** | 44.84 | 37.41 | +7.43 years |
-| **Credit Score** | 645.35 | 651.85 | -6.50 |
-| **Balance** | $91,108 | $72,745 | +$18,363 |
-| **Tenure** | 4.93 | 5.03 | -0.10 years |
-| **Products** | 1.48 | 1.54 | -0.06 |
-| **Salary** | $101,466 | $99,738 | +$1,728 |
-
-**Key Insight:** Bank is losing older, wealthier customers with higher balances.
-
----
-
-## 🎯 High-Risk Customer Segments
-
-### Segment 1: German Middle-Aged Customers
-- **Location:** Germany
-- **Age:** 46-60
-- **Risk Level:** CRITICAL 🚨
-- **Estimated Churn:** 60-70%
-
-### Segment 2: Inactive Female Customers
-- **Gender:** Female
-- **Activity:** Inactive
-- **Risk Level:** HIGH ⚠️
-- **Estimated Churn:** 35-40%
-
-### Segment 3: Multi-Product Holders
-- **Products:** 3-4
-- **Risk Level:** EXTREME 🚨
-- **Estimated Churn:** 82-100%
-
----
-
-## 💡 Actionable Recommendations
-
-### Immediate Actions (0-30 Days)
-
-1. **Deploy ML Model**
-   - Flag customers with >70% churn probability
-   - Create automated alerts for high-risk accounts
-   - Prioritize German customers aged 46-60
-
-2. **Product Portfolio Freeze**
-   - STOP cross-selling to customers with 2+ products
-   - Investigate why 3-4 product holders leave
-   - Review product quality and satisfaction
-
-3. **Germany Market Investigation**
-   - Conduct urgent customer surveys
-   - Analyze competitor offerings
-   - Review pricing and service quality
-
-### Short-Term Actions (1-3 Months)
-
-4. **Targeted Retention Campaigns**
-   - Age-specific programs for 46-60 segment
-   - Female-focused engagement initiatives
-   - Inactive member reactivation campaign
-
-5. **Customer Engagement Program**
-   - Increase touchpoints with inactive members
-   - Loyalty rewards for 2-product customers
-   - Personalized communication strategies
-
-### Long-Term Strategy (3-12 Months)
-
-6. **Predictive Retention System**
-   - Real-time churn prediction
-   - Automated intervention workflows
-   - Continuous model retraining
-
-7. **Product Strategy Overhaul**
-   - Redesign 3-4 product bundles
-   - Focus on quality over quantity
-   - Optimize for 2-product sweet spot
-
-8. **Regional Customization**
-   - Germany-specific retention strategies
-   - Localized offerings by geography
-   - Address regional pain points
-
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 bank-customer-churn-analysis/
 ├── data/
-│   ├── raw/                          # Raw data from Kaggle
-│   └── processed/                    # Cleaned datasets
-│       ├── bank_churn_clean.csv
-│       └── bank_churn_features.csv
+│   ├── raw/
+│   └── processed/
 ├── notebooks/
-│   ├── 01_data_cleaning.ipynb        # Data loading & cleaning
-│   ├── 02_eda.ipynb                  # Exploratory analysis
-│   ├── 03_feature_engineering.ipynb  # Feature creation
-│   └── 04_xgboost_model.ipynb        # Model training
-├── outputs/
-│   ├── churn_distribution.png        # 8 visualization charts
-│   ├── confusion_matrix.png
-│   ├── feature_importance.png
-│   ├── roc_curve.png
-│   └── model_results.csv             # 2,000 predictions
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   └── 04_xgboost_model.ipynb
 ├── sql/
-│   └── churn_queries.sql             # 12 analytical queries
+│   └── churn_queries.sql
 ├── dashboard/
-│   ├── README.md                     # Power BI instructions
-│   └── dashboard_screenshot.png      # Upload your dashboard here
-├── bank_churn.db                     # SQLite database
-├── requirements.txt
-└── README.md
+├── outputs/
+├── bank_churn.db
+└── requirements.txt
 ```
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
+## How to Run
 
 ```bash
 pip install -r requirements.txt
-```
 
-**Required packages:**
-- kagglehub
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- xgboost
-- scikit-learn
-
-### Running the Analysis
-
-**Step 1: Data Pipeline**
-```bash
 # Run notebooks in order
 jupyter notebook notebooks/01_data_cleaning.ipynb
 jupyter notebook notebooks/02_eda.ipynb
@@ -311,177 +119,10 @@ jupyter notebook notebooks/03_feature_engineering.ipynb
 jupyter notebook notebooks/04_xgboost_model.ipynb
 ```
 
-**Step 2: SQL Analysis**
-```bash
-# Database already created: bank_churn.db
-# Run queries from sql/churn_queries.sql
-sqlite3 bank_churn.db < sql/churn_queries.sql
-```
-
-**Step 3: Power BI Dashboard Development**
-- Open Power BI Desktop
-- Import data using Power Query Editor
-- Transform data using M Language
-- Create data model with relationships
-- Develop advanced DAX measures (Time Intelligence, Statistical, Logical functions)
-- Design interactive visuals with bookmarks and drill-through
-- Implement Row Level Security (RLS)
-- Publish to Power BI Service
-- Configure scheduled refresh and subscriptions
-- Follow instructions in `dashboard/README.md`
-- Save screenshot to `dashboard/dashboard_screenshot.png`
-
 ---
 
-## 📊 SQL Analysis Results
+## Dataset
 
-### Overall Churn Rate
-- **Total Customers:** 10,000
-- **Churned:** 2,037
-- **Churn Rate:** 20.37%
+Source: [Kaggle - Bank Customer Churn Prediction Dataset](https://www.kaggle.com/datasets/saurabhbadole/bank-customer-churn-prediction-dataset)
 
-### Churn by Geography
-| Geography | Total | Churned | Churn Rate |
-|-----------|-------|---------|------------|
-| Germany | 2,509 | 814 | 32.44% |
-| Spain | 2,477 | 413 | 16.67% |
-| France | 5,014 | 810 | 16.15% |
-
-### Churn by Age Group
-| Age Group | Total | Churn Rate |
-|-----------|-------|------------|
-| 46-60 | 1,647 | 51.12% |
-| Above 60 | 464 | 24.78% |
-| 30-45 | 6,248 | 15.30% |
-| Under 30 | 1,641 | 7.56% |
-
-### Churn by Products
-| Products | Total | Churned | Churn Rate |
-|----------|-------|---------|------------|
-| 4 | 60 | 60 | 100.00% |
-| 3 | 266 | 220 | 82.71% |
-| 1 | 5,084 | 1,409 | 27.71% |
-| 2 | 4,590 | 348 | 7.58% |
-
----
-
-## 🛠️ Technical Skills Demonstrated
-
-### Data Analysis & Manipulation
-- **Python Libraries**: Pandas, NumPy for data cleaning and transformation
-- **Data Processing**: Handled 10,000+ records, performed data validation and quality checks
-- **Feature Engineering**: Created calculated columns and ratio-based metrics
-- **Statistical Analysis**: Correlation analysis, distribution analysis, hypothesis testing
-
-### SQL & Database Management
-- **SQL Queries**: Wrote 12+ complex analytical queries with aggregations, GROUP BY, and CASE statements
-- **Database Design**: Created and managed SQLite database with proper indexing
-- **Data Extraction**: Extracted insights from large datasets using SQL joins and subqueries
-- **Performance Optimization**: Optimized queries for faster report generation
-
-### Business Intelligence & Visualization
-- **Power BI**: Dashboard design with DAX measures (Churn Rate, Retention Rate, Avg Balance)
-- **Data Visualization**: Created 8+ professional charts using Matplotlib and Seaborn
-- **KPI Development**: Defined and tracked key business metrics
-- **Report Design**: Structured reports for stakeholder presentation
-
-### Machine Learning & Predictive Analytics
-- **Model Development**: Built XGBoost classifier with 86.75% accuracy
-- **Hyperparameter Tuning**: Used GridSearchCV for model optimization
-- **Model Evaluation**: Confusion matrix, ROC curve, feature importance analysis
-- **Predictive Modeling**: Generated probability scores for churn prediction
-
-### Tools & Technologies
-- **Development**: Jupyter Notebook, Python 3.8+, Git/GitHub
-- **Data Tools**: Power Query Editor, SQL, Excel
-- **Visualization**: Power BI, Matplotlib, Seaborn
-- **Version Control**: Git for project management and collaboration
-
----
-
-## 📦 Dataset
-
-**Source:** [Kaggle - Bank Customer Churn Prediction Dataset](https://www.kaggle.com/datasets/saurabhbadole/bank-customer-churn-prediction-dataset)
-
-**Size:** 10,000 customers  
-**Features:** 11 original, 15 after engineering  
-**Target:** Exited (0 = Retained, 1 = Churned)
-
----
-
-## 📸 How to Add Dashboard Screenshots
-
-### After creating your Power BI dashboard:
-
-1. Take a screenshot of your dashboard
-2. Save it as `dashboard_screenshot.png`
-3. Place it in the `dashboard/` folder
-4. The README will automatically display it
-
-**Recommended screenshot settings:**
-- Full dashboard view
-- High resolution (1920x1080 or higher)
-- PNG format for best quality
-
----
-
-## 🎓 Key Learnings
-
-1. **Product complexity hurts retention** - More products ≠ better retention
-2. **Age is the strongest predictor** - Middle-aged customers need special attention
-3. **Geography matters significantly** - Regional strategies are essential
-4. **Inactive customers are at risk** - Engagement is critical
-5. **High-value customers are leaving** - Losing profitable segments
-
----
-
-## 📞 Next Steps
-
-1. ✅ **Analysis Complete** - All notebooks executed successfully
-2. ✅ **Model Trained** - 86.75% accuracy achieved
-3. ✅ **SQL Database Created** - 10,000 records loaded
-4. ⏳ **Power BI Dashboard** - Create and upload screenshot
-5. ⏳ **Deploy Model** - Implement real-time predictions
-6. ⏳ **Launch Retention Program** - Start with Germany pilot
-
----
-
-## 👤 Author
-
-**Data Analyst | Business Intelligence Developer**
-
-**Core Competencies:**
-- Advanced SQL & Database Management
-- Power BI Development (DAX, Power Query, M Language)
-- Python for Data Analysis (Pandas, NumPy, Scikit-learn)
-- Machine Learning & Predictive Analytics
-- Data Visualization & Dashboard Design
-- Statistical Analysis & Business Intelligence
-
-**Technical Skills:**
-- Power BI Desktop & Service (RLS, Bookmarks, Drill-Through, Scheduled Refresh)
-- SQL (Complex Queries, Joins, Aggregations, Performance Optimization)
-- Python (Data Cleaning, Feature Engineering, ML Model Development)
-- Data Modeling (Relationships, Bridge Tables, Star Schema)
-- Power Query Editor & M Language for ETL processes
-
-GitHub: [@git4k](https://github.com/git4k)  
-Project: [bank-customer-churn-analysis](https://github.com/git4k/bank-customer-churn-analysis)
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-## 🙏 Acknowledgments
-
-- Dataset: Saurabh Badole (Kaggle)
-- Tools: Python, XGBoost, Scikit-learn, Power BI
-- Platform: Kaggle, GitHub
-
----
-
-**⭐ If you found this analysis helpful, please star this repository!**
+10,000 customers | 11 features | Target: Exited (0 = Retained, 1 = Churned)
