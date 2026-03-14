@@ -26,20 +26,27 @@ A comprehensive data analytics project demonstrating end-to-end skills in data c
 
 ---
 
-## 📊 Dashboard Preview
+## 📊 Power BI Dashboard
 
-### Power BI Dashboard - Advanced Features
-*Professional dashboard showcasing advanced DAX, drill-through, and interactive features*
+### Bank Customer Churn - Interactive Dashboard
 
-![Dashboard Preview](dashboard/dashboard_screenshot.png)
+<table>
+  <tr>
+    <td><img src="dashboard/dashboard_chart1.png" width="400"/></td>
+    <td><img src="dashboard/dashboard_chart2.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img src="dashboard/dashboard_chart3.png" width="400"/></td>
+  </tr>
+</table>
 
-**Dashboard Capabilities:**
-- Interactive KPI cards with DAX measures
-- Drill-through filters for detailed analysis
-- Bookmarks for different views
-- Sync slicers across pages
-- Row Level Security (RLS) implementation
-- Scheduled refresh in Power BI Service
+**Dashboard Features:**
+- KPI cards: Churn Rate, Total Customers, Retention Rate
+- Churn by Geography (Bar Chart)
+- Age Group vs Churn Analysis
+- Active vs Inactive Members (Donut Chart)
+- Products vs Churn breakdown
+- Interactive slicers: Geography, Gender, IsActiveMember
 
 ### Analysis Visualizations
 
