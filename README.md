@@ -48,6 +48,28 @@ A comprehensive data analytics project demonstrating end-to-end skills in data c
 - Products vs Churn breakdown
 - Interactive slicers: Geography, Gender, IsActiveMember
 
+---
+
+## 📈 Analysis Visualizations
+
+<table>
+  <tr>
+    <td align="center"><img src="outputs/churn_distribution.png" width="380"/><br/><b>Churn Distribution</b><br/>20.37% overall churn rate</td>
+    <td align="center"><img src="outputs/churn_by_geography.png" width="380"/><br/><b>Churn by Geography</b><br/>Germany leads at 32.44%</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="outputs/age_vs_churn.png" width="380"/><br/><b>Age vs Churn</b><br/>Ages 46-60 at 51.12% churn</td>
+    <td align="center"><img src="outputs/correlation_heatmap.png" width="380"/><br/><b>Correlation Heatmap</b><br/>Age & Geography strongest predictors</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="outputs/confusion_matrix.png" width="380"/><br/><b>Confusion Matrix</b><br/>86.75% model accuracy</td>
+    <td align="center"><img src="outputs/feature_importance.png" width="380"/><br/><b>Feature Importance</b><br/>Top predictors: Age, Products, Activity</td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><img src="outputs/roc_curve.png" width="380"/><br/><b>ROC Curve</b><br/>AUC ~0.85 strong predictive power</td>
+  </tr>
+</table>
+
 ### Analysis Visualizations
 
 <table>
